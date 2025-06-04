@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vilde Svenkesen - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  </head>
+  <body>
+<!-- Fixed Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#intro">About me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a id="profile-link" href="https://github.com/vildesv" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Vilde Svenkesen</h1>
+    <p>Web Developer | Gamer | Art enthusiast</p>
+  </section>
+
+  <!-- Wavy SVG Divider -->
+   <div class="wave-divider">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="M0,60 
+             C120,20 240,100 360,60 
+             C480,20 600,100 720,60 
+             C840,20 960,100 1080,60 
+             C1200,20 1320,100 1440,60 
+             L1440,120 L0,120 Z" 
+          fill="#dceefc"></path>
+  </svg>
+</div>
+
+    <!-- Intro Section -->
+    <section id="intro">
+      <div class="intro-image">
+        <img src="images/Hawaii-Honu---Dive.jpg" alt="Photo of a turtle" />
+      </div>
+      <div class="intro-text">
+        <h2>About Me</h2>
+        <p>Hey! My name is Vilde, I'm 30 years old and based in Norway.</p>
+        <p>
+          I'm a passionate junior developer with a eye for detail, who loves to
+          be creative and explore new technologies. My journey in tech has been
+          fueled by my love for gaming and art, which inspires me to think
+          outside the box and approach problems with a unique perspective. I
+          enjoy solving problems, learning new tech, and deep dive into
+          different projects.
+        </p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-tile">
+          <a
+            href="https://github.com/vildesv/small-projects/tree/main/penguin"
+            target="_blank">
+            <img src="images/penguin.png" alt="Penguin Screenshot" />
+            <p>Penguin</p>
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <a href="https://github.com/vildesv/tribute-page" target="_blank">
+            <img src="images/tribute-page.png" alt="Tribute Page Screenshot" />
+            <p>Tribute Page</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a
+            href="https://github.com/vildesv/small-projects/tree/main/city-skyline"
+            target="_blank">
+            <img
+              src="images/cityskyline-day.png"
+              alt="City Skyline Screenshot"
+            />
+            <p>City Skyline</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://github.com/vildesv/survey-form" target="_blank">
+            <img src="images/survey-form.png" alt="Survey Form Screenshot" />
+            <p>Survey Form</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        I'm open to opportunities and collaborations. Feel free to reach out!
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/vildesv" target="_blank"
+          ><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:vildesv@example.com"
+          ><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/vildesv" target="_blank"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- "Back to Top" Button -->
+  <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Vilde Svenkesen | Made with ❤️ and curiosity</p>
+    </footer>
+
+      <!-- "Back to Top" Script -->
+  <script>
+    const topBtn = document.getElementById("back-to-top");
+
+    window.onscroll = () => {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    topBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+  </body>
+</html>
