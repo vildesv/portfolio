@@ -4,144 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vilde Svenkesen - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-<!-- Fixed Navbar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#welcome-section">Home</a></li>
-      <li><a href="#intro">About me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a id="profile-link" href="https://github.com/vildesv" target="_blank">GitHub</a></li>
-    </ul>
-  </nav>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#intro">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a id="profile-link" href="https://github.com/vildesv" target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Welcome Section -->
-  <section id="welcome-section">
-    <h1>Vilde Svenkesen</h1>
-    <p>Web Developer | Gamer | Art enthusiast</p>
-  </section>
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="reveal">
+      <h1>Vilde Svenkesen</h1>
+      <p>Web Developer | Gamer | Art Enthusiast</p>
+    </section>
 
-  <!-- Wavy SVG Divider -->
-   <div class="wave-divider">
-  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-    <path d="M0,60 
-             C120,20 240,100 360,60 
-             C480,20 600,100 720,60 
-             C840,20 960,100 1080,60 
-             C1200,20 1320,100 1440,60 
-             L1440,120 L0,120 Z" 
-          fill="#dceefc"></path>
-  </svg>
-</div>
+    <!-- Wavy Divider -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path
+          d="M0,60 C120,20 240,100 360,60 C480,20 600,100 720,60 C840,20 960,100 1080,60 C1200,20 1320,100 1440,60 L1440,120 L0,120 Z"
+          fill="#dceefc"
+        ></path>
+      </svg>
+    </div>
 
     <!-- Intro Section -->
-    <section id="intro">
+    <section id="intro" class="reveal">
       <div class="intro-image">
         <img src="images/Hawaii-Honu---Dive.jpg" alt="Photo of a turtle" />
       </div>
       <div class="intro-text">
         <h2>About Me</h2>
-        <p>Hey! My name is Vilde, I'm 30 years old and based in Norway.</p>
         <p>
-          I'm a passionate junior developer with a eye for detail, who loves to
-          be creative and explore new technologies. My journey in tech has been
-          fueled by my love for gaming and art, which inspires me to think
-          outside the box and approach problems with a unique perspective. I
-          enjoy solving problems, learning new tech, and deep dive into
-          different projects.
-        </p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          Hey! I'm Vilde, a 30-year-old junior developer from Norway with a
+          passion for creating, problem-solving, and gaming. I love bringing
+          ideas to life through code and enjoy diving into new technologies with
+          curiosity and creativity.
+        </p>
+        <p>
+          I am a dedicated individual with a strong interest in technology,
+          operations, and system maintenance. I take a hands-on approach when
+          learning, thriving in collaborative environments where I can
+          contribute to creating stable technical solutions.
+        </p>
+        <p>
+          Through both education and practical experience, I have developed
+          solid skills as a developer and I am known for being organized, eager
+          to learn, and reliable.
+        </p>
+        <p>
+          I’m also on the autism spectrum, which gives me a unique perspective
+          and strong attention to detail. This helps me approach challenges
+          thoughtfully and innovatively, while valuing clear communication and
+          structure.
+        </p>
+        <p>
+          Beyond my technical background, I’m actively engaged in volunteer work
+          and inclusive initiatives, reflecting my desire to make a positive
+          impact both professionally and socially. Outside of coding, I enjoy
+          gaming and exploring different creative outlets, always eager to grow
+          personally and professionally.
+        </p>
       </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <h2>Skills & Tools</h2>
+      <ul class="skills-list">
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fab fa-github"></i> Git & GitHub</li>
+        <li><i class="fas fa-cloud"></i> Azure</li>
+        <li><i class="fas fa-code"></i> C# / .NET</li>
+        <li><i class="fas fa-terminal"></i> Postman & APIs</li>
+      </ul>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="reveal">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-tile">
-          <a
-            href="https://github.com/vildesv/small-projects/tree/main/penguin"
-            target="_blank">
-            <img src="images/penguin.png" alt="Penguin Screenshot" />
-            <p>Penguin</p>
+          <a href="https://github.com/vildesv/pokedex" target="_blank">
+            <img src="images/pokedex.png" alt="Pokédex Screenshot" />
+            <p>
+              Pokédex
+            </p>
           </a>
         </div>
 
         <div class="project-tile">
-          <a href="https://github.com/vildesv/tribute-page" target="_blank">
-            <img src="images/tribute-page.png" alt="Tribute Page Screenshot" />
-            <p>Tribute Page</p>
+          <a href="https://github.com/vildesv/bookDashboard" target="_blank">
+            <img src="images/bookDashboard.png" alt="Book Dashboard Screenshot" />
+            <p>
+              Book Dashboard
+            </p>
           </a>
         </div>
+
         <div class="project-tile">
           <a
             href="https://github.com/vildesv/small-projects/tree/main/city-skyline"
-            target="_blank">
+            target="_blank"
+          >
             <img
               src="images/cityskyline-day.png"
               alt="City Skyline Screenshot"
             />
-            <p>City Skyline</p>
+            <p>
+              City Skyline
+            </p>
           </a>
         </div>
+
         <div class="project-tile">
-          <a href="https://github.com/vildesv/survey-form" target="_blank">
-            <img src="images/survey-form.png" alt="Survey Form Screenshot" />
-            <p>Survey Form</p>
+          <a href="https://github.com/vildesv/romferd" target="_blank">
+            <img src="images/romferd.png" alt="Romferd Screenshot" />
+            <p>
+              Romferd
+            </p>
           </a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="reveal">
       <h2>Let's Connect</h2>
       <p>
         I'm open to opportunities and collaborations. Feel free to reach out!
       </p>
       <div class="contact-links">
         <a href="https://github.com/vildesv" target="_blank"
-          ><i class="fab fa-github"></i> GitHub</a>
-        <a href="mailto:vildesv@example.com"
-          ><i class="fas fa-envelope"></i> Email</a>
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a href="mailto:vilde_svenkesen@hotmail.no"
+          ><i class="fas fa-envelope"></i> Email</a
+        >
         <a href="https://linkedin.com/in/vildesv" target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a>
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
       </div>
     </section>
 
-    <!-- "Back to Top" Button -->
-  <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer>
       <p>© 2025 Vilde Svenkesen | Made with ❤️ and curiosity</p>
     </footer>
-
-      <!-- "Back to Top" Script -->
-  <script>
-    const topBtn = document.getElementById("back-to-top");
-
-    window.onscroll = () => {
-      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        topBtn.style.display = "block";
-      } else {
-        topBtn.style.display = "none";
-      }
-    };
-
-    topBtn.onclick = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-  </script>
   </body>
 </html>
